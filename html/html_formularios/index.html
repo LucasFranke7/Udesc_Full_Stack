@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+   <h1>Formulario Vazio</h1>
+            <p>Cria uma caixa vazia para preenchimento do formulario</p>
+        <form style="border: 1px dashed black; 
+                 padding: 20px;">
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+            </form>
+
+    <h1>Radio buton</h1>
+            <p>O elemento Radio, permite exibir um conjunto de escolhas onde apenas uma das opções podera ser selecionada </p>
+        <form style="border: 1px dashed black; 
+         padding: 20px;">
+            <p>Escolha seu proximo destino</p>
+
+            <input type="radio" name="destino" id="eua">
+            <label for="eua">Estados Unidos da America</label>
+                <br>
+            <input type="radio" name="destino" id="paris">
+            <label for="paris">Paris</label>
+                <br>
+            <input type="radio" name="destino" id="cancum" checked >
+            <label for="cancun">Cancún</label>
+        
+        </form>
+
+    <h1>Check Box</h1>
+            <p>O elemento Check Box , permite exibir um conjunto de escolhas onde multiplas opções podem ser selecionada </p>
+        <form style="border: 1px dashed black; 
+        padding: 20px;">
+
+            <p>Escolha seu proximo destino</p>
+
+            <input type="checkbox" name="destino" id="eua">
+            <label for="eua">Estados Unidos da America</label>
+                <br>
+            <input type="checkbox" name="destino" id="paris">
+             <label for="paris">Paris</label>
+                <br>
+            <input type="checkbox" name="destino" id="cancum">
+            <label for="cancun">Cancún</label>
+        
+        </form>
+
+
+    <h1>Formulario com Submit</h1>
+            <p>O tipo submit exibe um botão que ao ser clicado envia uma requisição com os dados preenchidos no formulario para um servidor web</p>
+        
+        <form style="border: 1px dashed black; 
+         padding: 20px;">
+
+            <fieldset>
+
+                <legend>Dados Cadastrais:</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"> 
+                    <br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                    <br><br>
+                <input type="submit" value="submit">
+
+                
+
+             
+       
+            </fieldset>
+
+        </form>    
+    
+    <h1>selct</h1>  
+            <p>O select, é um elemento que oferece um conjunto de opções que são visiveis ao clicarmos na setinha ao lado direito do elemento. Por padrao a primeira opção é adicionada, com tudo, é possivel oferecer uma opção pre definida usando o atributo -selected-.
+            Por padrao esse elemento permite apenas uma escolha, com tudo é possivel definir a escolha de multiplas opções usando o atributo -multiple-  </p>
+        
+
+        <form style="border: 1px dashed black; 
+         padding: 20px;">
+
+         <select name="carros" id="carros">
+            <option value="volvo">volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi"selected>Audi</option>
+         </select>
+         <br>
+         <br>
+         <select name="carros" id="carros"multiple>
+            <option value="volvo">volvo</option>
+            <option value="saab"selected>Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+         </select>
+
+            
+        </form>
+
+    <h1>Fieldset</h1>
+        <p>Apesar de não ser uma tag de entrada de daodos, o fieldset é frequentemente usado em formularios.
+            Ele produz um efeito em boda que divide uma opção de dados de modo a facilitar a visualização agrupando elementos relacionados, quando a tag legend é utilizada é adicionada uma descrição a sua estrutura.
+        </p>
+        
+        <form style="border: 1px dashed black; 
+                 padding: 20px;">
+            <fieldset>
+                <legend>Dados Cadastrais</legend>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <input type="submit" value="Salvar">
+            </fieldset>
+           
+        </form>
+
+    
+
+
+</body>
+</html>
